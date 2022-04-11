@@ -1,0 +1,89 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(/img/img-background1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+#title{
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+#description{
+    text-align: center;
+    font-size: 1.3em;
+}
+form{
+    background-color: black;
+    padding: 5%;
+    opacity: 0.8;
+    margin: 3% 20%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(23) 1fr;
+    grid-gap:8px;
+}
+#satisfaccion-form{
+    display: grid;
+    grid-template-rows: repeat(4) 1fr;
+    grid-template-columns: 24px 1fr;
+    grid-column: 1/2;
+    grid-gap:10px;
+}
+#satisfaccion-form input{
+    width: 100%;
+    height: 2em;
+    background-color: blueviolet;
+}
+label{
+    font-size: 22px;
+}
+#name,#email,#number{
+    font-size: 26px;
+    height: 28px;
+    border-radius: 5px;
+    border: 1px solid #FFF;
+}
+#dropdown, #dropdown-1{
+    font-size: 20px;
+    height: 28px;
+    border-radius: 5px;
+    border: 1px solid #FFF;
+}
+#opinion-form{
+    display: grid;
+    grid-template-rows: repeat(4) 1fr;
+    grid-template-columns: 24px 1fr;
+    grid-column: 1/2;
+    grid-gap:10px;
+    
+}
+#opinion-form input{
+    width: 100%;
+    height: 2em;
+    background-color: blueviolet;
+}
+
+#textarea{
+    height: 120px;
+    margin-top: 15px;
+}
+#submit{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: blueviolet;
+    height: 40px;
+    opacity: 1;
+    margin-top: 20px;
+}
+
+#submit:hover{
+    background-color: rgb(124, 13, 228);
+}

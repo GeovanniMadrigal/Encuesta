@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/estilos.css">
+    <title>FORMULARIO DE ENCUESTA</title>
+</head>
+<body>
+    <main>
+        <h1 id="title">Encuesta de satisfaccion Texas Instruments</h1>
+        <p id="description">Tu opinion es muy importante para nosotros, califica nuestros productos</p>
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Nombre:</label>
+            <input type="text" id="name" required placeholder="Introduce tu nombre">
+            <label for="email" id="email-label">E-mail:</label>
+            <input type="email" id="email" required placeholder="Introduce tu E-mail">
+            <label for="number" id="number-label">Edad:</label>
+            <input type="number" id="number" min="12" max="90" placeholder="Introduce tu Edad">
+            <label for="dropdown">Ocupación</label>
+            <select name="" id="dropdown">
+                <option value="licenciatura">Estudiante de licenciatura</option>
+                <option value="maestria">Estudiante maestria</option>
+                <option value="doctorado">Estudiante Doctorado</option>
+                <option value="trabajo">Trabajo</option>
+                <option value="practicante">Practicante</option>
+                <option value="empresa">Empresa</option>
+                <option value="otro">Otro</option>
+            </select>
+            <label for="s-radio_1">¿Cuál dirias que fue tu atencion en Texas Instruments?</label>
+            <div id="satisfaccion-form">
+                <input id="s-radio_1" type="radio" name="satisfaccion"> 
+                <label for="s-radio_1">Excelente</label>
+                <input id="s-radio_2" type="radio" name="satisfaccion"> 
+                <label for="s-radio_2">Buena</label>
+                <input id="s-radio_3" type="radio" name="satisfaccion"> 
+                <label for="s-radio_3">Regular</label>
+                <input id="s-radio_4" type="radio" name="satisfaccion"> 
+                <label for="s-radio_4">Mala</label>
+            </div>
+            <label for="dropdown-1">¿Que te gusta de nosotros?</label>
+            <select name="" id="dropdown-1">
+                <option value="productos">Productos</option>
+                <option value="proyectos">Proyectos de investigacion</option>
+                <option value="tutorias">Turorias</option>
+                <option value="capacitacion">Capacitación</option>
+            </select>
+            <label for="">¿En que deberiamos  invertir mas segun tu opinión?</label>
+            <div id="opinion-form">
+                <input type="checkbox" name="" id="o-radio_1">
+                <label for="o-radio_1">Atencion al cliente</label>
+                <input type="checkbox" name="" id="o-radio_2">
+                <label for="o-radio_2">Mejores productos</label>
+                <input type="checkbox" name="" id="o-radio_3">
+                <label for="o-radio_3">Mas informacion sobre proyectos</label>
+                <input type="checkbox" name="" id="o-radio_4">
+                <label for="o-radio_4">Una comunidad para la atención de dudas</label>
+            </div>
+            <label for="textarea">Otros comentarios:</label>
+            <textarea name="comentarios" rows="10" cols="40" id="textarea" placeholder="Escribe aqui los comentarios"></textarea>
+            <button id="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
